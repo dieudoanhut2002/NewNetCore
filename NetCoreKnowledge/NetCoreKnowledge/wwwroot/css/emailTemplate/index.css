@@ -1,0 +1,10 @@
+.clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.6em; /* Tùy ch?nh d?a trên kích th??c ch? */
+    cursor: pointer;
+    white-space: normal;
+}

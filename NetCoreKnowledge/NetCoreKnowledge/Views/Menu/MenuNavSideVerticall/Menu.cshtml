@@ -1,0 +1,111 @@
+﻿
+<div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+                <div class="sb-sidenav-menu-heading border_cutom">Người bán</div>
+                <a class="nav-link border_cutom" href="/Home/Index">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-house"></i></div>
+                    <span>Trang chủ</span>
+                </a>
+                <a class="nav-link border_cutom" href="/Certificate/Index">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-building"></i></div>
+                    <span>Chữ ký số</span>
+                </a>
+                <a class="nav-link border_cutom" href="/TODeclarationForm01/Index">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-building"></i></div>
+                    <span>Tờ khai 01</span>
+                </a>
+                <a class="nav-link border_cutom" href="/InvRange/Index">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-building"></i></div>
+                    <span>Quản lý Dải hóa đơn</span>
+                </a>
+                <a class="nav-link border_cutom" href="/Email/Index">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-palette"></i></div>
+                    <span>Quản lý Email</span>
+                </a>
+                <a class="nav-link border_cutom" href="/EmailTemplate/Index">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-palette"></i></div>
+                    <span>Quản lý mẫu Email</span>
+                </a>
+                <a class="nav-link border_cutom" href="/InvVAT/Index">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-palette"></i></div>
+                    <span>Hoá đơn GTGT</span>
+                </a>
+                <a class="nav-link border_cutom" href="/TOInvError/Index">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-palette"></i></div>
+                    <span>Quản lý Thông báo sai sót</span>
+                </a>
+                <a class="nav-link border_cutom" href="/TOSummaryTable/Index">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-palette"></i></div>
+                    <span>Quản lý bảng tổng hợp</span>
+                </a>
+                <a class="nav-link collapsed border_cutom" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayoutsReport" aria-expanded="false" aria-controls="collapseLayoutsReport">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-database"></i></div>
+                    Báo cáo
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse border_cutom" id="collapseLayoutsReport" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link border_cutom" asp-controller="RequestManagement" asp-action="Index">
+                            <i class="fa-duotone fa-dollar-sign me-2"></i> Quản lý yêu cầu
+                        </a>
+                        <a class="nav-link border_cutom" asp-controller="Report" asp-action="Detail">
+                            <i class="fa-duotone fa-dollar-sign me-2"></i> Báo cáo chi tiết
+                        </a>
+                    </nav>
+                </div>
+                <div class="sb-sidenav-menu-heading border_cutom">DANH MỤC HỆ THỐNG</div>
+                <a class="nav-link collapsed border_cutom" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayoutsCompany" aria-expanded="false" aria-controls="collapseLayoutsCompany">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-database"></i></div>
+                    DỮ LIỆU TĨNH
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse border_cutom" id="collapseLayoutsCompany" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link border_cutom" asp-controller="InvIssuanceLocation" asp-action="Index">
+                            <i class="fa-duotone fa-solid fa-location-dot"></i> Điểm xuất
+                        </a>
+                        <a class="nav-link border_cutom" asp-controller="CompanyCurrency" asp-action="Index">
+                            <i class="fa-duotone fa-dollar-sign me-2"></i> Tiền tệ
+                        </a>
+                        <a class="nav-link border_cutom" asp-controller="CompanyPaymentMethod" asp-action="Index">
+                            <i class="fa-duotone fa-credit-card me-2"></i> Phương thức thanh toán
+                        </a>
+                        <a class="nav-link border_cutom" asp-controller="CompanyTaxAuthorityCode" asp-action="Index">
+                            <i class="fa-duotone fa-city me-2"></i> Cơ quan thuế
+                        </a>
+                        <a class="nav-link border_cutom" asp-controller="CompanyProduct" asp-action="Index">
+                            <i class="fa-duotone fa-stopwatch-20 me-2"></i> Sản phẩm
+                        </a>
+                        <a class="nav-link border_cutom" asp-controller="CompanyCustomer" asp-action="Index">
+                            <i class="fa-duotone fa-stopwatch-20 me-2"></i> Danh sách khách hàng
+                        </a>
+                    </nav>
+                </div>
+
+                <a class="nav-link collapsed border_cutom" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayoutsSystem" aria-expanded="false" aria-controls="collapseLayoutsSystem">
+                    <div class="sb-nav-link-icon"><i class="fa-duotone fa-solar-system"></i></div>
+                    CẤU HÌNH
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse border_cutom" id="collapseLayoutsSystem" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link border_cutom" asp-controller="User" asp-action="Index">
+                            <i class="fa-duotone fa-users me-2"></i> Tài khoản
+                        </a>
+                        <a class="nav-link border_cutom" asp-controller="Role" asp-action="Index">
+                            <i class="fa-duotone fa-fingerprint me-2"></i> Nhóm quyền
+                        </a>
+                    </nav>
+                </div>               
+            </div>
+        </div>
+        <div class="sb-sidenav-footer p-2">
+            <a class="d-flex justify-content-center align-items-center" asp-controller="User" asp-action="Logout" method="get">
+                <i class="fa fa-power-off text-white"></i>
+            </a>
+        </div>
+    </nav>
+</div>
+

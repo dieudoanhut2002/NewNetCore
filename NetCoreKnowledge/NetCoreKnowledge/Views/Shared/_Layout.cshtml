@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - NetCoreKnowledge</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/NetCoreKnowledge.styles.css" asp-append-version="true" />
+    <partial name="_Style" />
+    <partial name="_Script" />
 </head>
 <body>
     <header>
@@ -30,10 +30,15 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    @await Html.PartialAsync("../Menu/MenuTopHeader/MenuTop")
+
+    <div id="layoutSidenav">
+        @await Html.PartialAsync("../Menu/MenuNavSideVerticall/Menu")
+        <div id="layoutSidenav_content">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 
     <footer class="border-top footer text-muted">

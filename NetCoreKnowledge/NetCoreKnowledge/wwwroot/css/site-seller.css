@@ -1,0 +1,60 @@
+/*.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}*/
+
+
+/*LOGIN*/
+
+.title-menutop_login {
+    background-color: #fff;
+}
+
+.background {
+    background-image: url("https://meinvoice.misacdn.net/app3/Content/img/Login/login-backgroup.png?v=R69.01");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    max-width: 100%;
+    z-index: 0;
+}
+
+.form_login {
+    width: 460px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 16px 29px 30px;
+    min-height: 350px;
+    position: relative;
+}
+
+.form-title {
+    color: #fff;
+}
+
+.btn-seller_login {
+    color: #fff;
+    border-radius: 22px;
+    width: 100%;
+    border: none;
+}
+
+    .btn-seller_login:hover {
+        background-color: rgb(48, 117, 230, 0.8) !important;
+    }
+
+}

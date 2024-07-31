@@ -1,0 +1,95 @@
+﻿.table-wrapper {
+    overflow-x: auto;
+}
+
+.sticky-columnL1,
+.sticky-columnL2,
+.sticky-columnL3,
+.sticky-columnL4 {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white !important;
+    z-index: 2 !important;
+}
+
+.sticky-columnL1 {
+    left: 0;
+}
+.sticky-columnL2 {
+    left: 47px;
+}
+.sticky-columnL3 {
+    left: 185px;
+}
+.sticky-columnL4 {
+    left: 305px;
+}
+
+.sticky-columnR1,
+.sticky-columnR2 {
+    position: -webkit-sticky; /*Safari*/
+    position: sticky;
+    background-color: white !important;
+    z-index: 2 !important; /* Đảm bảo cột cố định nằm trên các cột khác */
+}
+    .sticky-columnR1:has(.modal.show),
+    .sticky-columnR2:has(.modal.show) {
+        position: initial;
+    }
+
+.sticky-columnR1 {
+        right: 0;
+    }
+
+.sticky-columnR2 {
+    right: 82px;
+}
+
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white !important;
+    z-index: 1;
+}
+
+.table {
+    width: 100%;
+    table-layout: auto; /* Có thể điều chỉnh nếu cần */
+}
+
+.table th, .table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-content {
+    margin-top: 80px;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: auto;
+}
+.table-responsive::-webkit-scrollbar {
+    height: 9px;
+}
+
+.gray-background {
+    background-color: rgba(0, 0, 0, 0.1); /* Light gray background */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.light-blue-background {
+    background-color: #e7f4fa; /* Light blue color */
+    padding: 15px;
+    border-radius: 5px; /* Optional: adds rounded corners */
+    margin-bottom: 20px; /* Space between sections */
+}
